@@ -1,3 +1,4 @@
+import 'package:features/Features/HStepper.dart';
 import 'package:features/Features/OTP.dart';
 import 'package:flutter/material.dart';
 
@@ -68,6 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
             OutlinedButton(onPressed: (){
               // Navigator.push(context, MaterialPageRoute(builder: (context)=>SmsTest()));
             }, child: Text('Sms')),
+            OutlinedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>HStepper()));
+            }, child: Text('HStepper')),
           ],
         ),
       ),
