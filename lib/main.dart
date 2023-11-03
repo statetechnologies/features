@@ -1,5 +1,6 @@
 import 'package:features/Features/HStepper.dart';
 import 'package:features/Features/OTP.dart';
+import 'package:features/Features/videoStream.dart';
 import 'package:flutter/material.dart';
 
 import 'Features/Shimmer.dart';
@@ -72,6 +73,9 @@ class _MyHomePageState extends State<MyHomePage> {
             OutlinedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>HStepper()));
             }, child: Text('HStepper')),
+            OutlinedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>VideoStreamScreen()));
+            }, child: Text('Video Stream')),
           ],
         ),
       ),
